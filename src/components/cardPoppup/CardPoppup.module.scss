@@ -1,0 +1,78 @@
+.card {
+  position: relative;
+  width: 100%;
+  width: calc(384px);
+  margin-bottom: 40px;
+  padding: 50px 50px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 24px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headline {
+  margin-bottom: 8px;
+  font-size: 16px;
+  opacity: 0.5;
+}
+
+.title {
+  margin-bottom: 16px;
+  font-size: 40px;
+}
+
+.priceBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  margin-bottom: 30px;
+  display: inline-flex;
+  align-items: flex-start;
+  line-height: 1;
+  letter-spacing: -0.02em;
+
+  span {
+    font-size: 60px;
+  }
+
+  .units {
+    margin-right: 4px;
+    font-size: 30px;
+    line-height: 1.3;
+  }
+}
+
+.input {
+  width: 100%;
+  min-width: 288px;
+  height: 56px;
+  margin-bottom: 16px;
+  padding: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
+}
+
+.lastInput {
+  margin-bottom: 30px;
+}
+
+.btn {
+  min-width: 288px;
+}
+
+.icon {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  cursor: pointer;
+}

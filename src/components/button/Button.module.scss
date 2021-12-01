@@ -1,0 +1,21 @@
+@import '../../assets/scss/vars';
+.btn {
+  width: 100%;
+  max-width: 235px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  background-color: #fff;
+  color: $hover;
+  border-radius: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+
+  &:hover {
+    background-color: $accent;
+    color: #fff;
+    transition: background-color 0.3s, color 0.3s;
+  }
+}

@@ -1,0 +1,163 @@
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto-Regular'), url('../fonts/Roboto-Regular.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto-Medium'), url('../fonts/Roboto-Medium.ttf') format('ttf');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.eot?v1a3ir');
+  src: url('../fonts/icomoon.eot?v1a3ir#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?v1a3ir') format('truetype'),
+    url('../fonts/icomoon.woff?v1a3ir') format('woff'),
+    url('../fonts/icomoon.svg?v1a3ir#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^='icon-'],
+[class*=' icon-'] {
+  font-family: 'icomoon' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// ICON SIZES
+.icon-8 {
+  font-size: 8px;
+}
+
+.icon-10 {
+  font-size: 10px;
+}
+
+.icon-11 {
+  font-size: 11px;
+}
+
+.icon-12 {
+  font-size: 12px;
+}
+
+.icon-13 {
+  font-size: 13px;
+}
+
+.icon-14 {
+  font-size: 14px;
+}
+
+.icon-15 {
+  font-size: 15px;
+}
+
+.icon-16 {
+  font-size: 16px;
+}
+
+.icon-17 {
+  font-size: 17px;
+}
+
+.icon-18 {
+  font-size: 18px;
+}
+
+.icon-19 {
+  font-size: 19px;
+}
+
+.icon-20 {
+  font-size: 20px;
+}
+
+.icon-21 {
+  font-size: 21px;
+}
+
+.icon-22 {
+  font-size: 22px;
+}
+
+.icon-23 {
+  font-size: 23px;
+}
+
+.icon-24 {
+  font-size: 24px;
+}
+
+.icon-25 {
+  font-size: 25px;
+}
+
+.icon-26 {
+  font-size: 26px;
+}
+
+.icon-27 {
+  font-size: 27px;
+}
+
+.icon-28 {
+  font-size: 28px;
+}
+
+.icon-29 {
+  font-size: 29px;
+}
+
+.icon-30 {
+  font-size: 30px;
+}
+
+.icon-31 {
+  font-size: 31px;
+}
+
+.icon-32 {
+  font-size: 32px;
+}
+
+.icon-33 {
+  font-size: 33px;
+}
+
+.icon-34 {
+  font-size: 34px;
+}
+
+.icon-35 {
+  font-size: 35px;
+}
+
+.icon-36 {
+  font-size: 36px;
+}
+// ICON SIZES
+
+// ICON TRANSITIONS
+.icon-hover {
+  &:hover {
+    opacity: 0.6;
+    transition: opacity 0.3s;
+  }
+}

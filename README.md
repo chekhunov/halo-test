@@ -1,4 +1,14 @@
-# Getting Started with Create React App
+# Halo
+
+- commands
+
+npm run server: start server localhost:9999
+npm run start: start react project
+
+route: https://run.mocky.io/v3/b7d36eea-0b3f-414a-ba44-711b5f5e528e
+my server route products: localhost:9999/products
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

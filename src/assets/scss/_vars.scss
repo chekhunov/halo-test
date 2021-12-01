@@ -1,0 +1,22 @@
+$default: #000000;
+$title: #000000;
+$accent: #50daa8;
+$hover: #4bcfa0;
+$disable: #aeaeae;
+
+%roboto-400 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+%roboto-500 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
+}

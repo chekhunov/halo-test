@@ -1,0 +1,45 @@
+.card {
+  width: 100%;
+  width: calc(352px);
+  margin-right: 45px;
+  margin-bottom: 40px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 24px;
+}
+
+.headline {
+  margin-bottom: 8px;
+  font-size: 16px;
+  opacity: 0.5;
+}
+
+.title {
+  margin-bottom: 40px;
+  font-size: 40px;
+}
+
+.priceBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  display: inline-flex;
+  align-items: flex-start;
+  line-height: 1;
+  letter-spacing: -0.02em;
+
+  span {
+    font-size: 60px;
+  }
+
+  .units {
+    margin-right: 4px;
+    font-size: 30px;
+    line-height: 1.3;
+  }
+}
