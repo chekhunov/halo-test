@@ -4,8 +4,8 @@ const app = express();
 const port = 9999;
 
 const corsOptions = {
-  origin: 'http://localhost:3000', // домен сервиса, с которого будут приниматься запросы
-  optionsSuccessStatus: 200, // для старых браузеров
+  origin: 'http://localhost:3000',
+  optionsSuccessStatus: 200,
 };
 app.use(cors(corsOptions));
 
@@ -62,7 +62,6 @@ const products = [
   },
 ];
 
-//res ответ req все что пришлет пользователь
 app.get('/products', cors(corsOptions), (req, res) => {
   res.json(products);
 });

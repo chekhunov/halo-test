@@ -1,9 +1,20 @@
-import { addCardsAction } from '../store/cardReducer';
+import {
+  fetchCardsAction,
+  fetchCardsSuccessAction,
+  fetchCardsErrorAction,
+} from '../store/cardReducer';
+import axios from 'axios';
 
 export const fetchCards = () => {
-  return (dispatch) => {
-    fetch('http://localhost:9999/products')
-      .then((response) => response.json())
-      .then((json) => dispatch(addCardsAction(json)));
+  return async (dispatch) => {
+    try {
+      dispatch(fetchCardsAction());
+      const response = await axios.get('http://localhost:9999/products');
+      setTimeout(() => {
+        dispatch(fetchCardsSuccessAction(response.data));
+      }, 500);
+    } catch (error) {
+      dispatch(fetchCardsErrorAction({ payload: 'Error occurred when loading' }));
+    }
   };
 };

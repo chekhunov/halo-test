@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import classNames from 'classnames';
-import Button from '../button';
+import Form from '../form';
 import style from './CardPoppup.module.scss';
 
 function CardPoppup({ index, name, category, price, poppupActive, setPoppupActive, closePoppup }) {
@@ -18,40 +18,26 @@ function CardPoppup({ index, name, category, price, poppupActive, setPoppupActiv
         <path
           d="M25 15L15 25"
           stroke="black"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
         <path
           d="M15 15L25 25"
           stroke="black"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
       </svg>
-      <form className={style.form} action="">
-        <div className={classNames(style.headline, 'uppercase')}>{category}</div>
-        <div className={style.title}>{name}</div>
-        <div className={style.priceBox}>
-          <div className={style.price}>
-            <span className={style.units}>$</span>
-            <span>{price}</span>
-          </div>
-        </div>
-        <input className={style.input} type="name" placeholder="Name" />
-        <input
-          className={classNames(style.input, style.lastInput)}
-          type="tel"
-          placeholder="Number"
-        />
-        <Button
-          width={288}
-          name={'Order'}
-          poppupActive={poppupActive}
-          setPoppupActive={setPoppupActive}
-        />
-      </form>
+
+      <Form
+        name={name}
+        category={category}
+        price={price}
+        poppupActive={poppupActive}
+        setPoppupActive={setPoppupActive}
+      />
     </div>
   );
 }
