@@ -39,17 +39,32 @@
   }
 }
 
+.label {
+  position: relative;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
 .input {
   width: 100%;
   min-width: 288px;
   height: 56px;
-  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 16px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 16px;
 }
 
-.lastInput {
+input {
+  flex-grow: 1;
+  border: 0;
+  outline: none;
+}
+
+.last {
   margin-bottom: 30px;
 }
 

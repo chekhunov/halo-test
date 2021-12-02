@@ -56,6 +56,7 @@ function Home() {
               name={'Buy cheapest'}
               poppupActive={poppupActive}
               setPoppupActive={setPoppupActive}
+              toValidForm={() => {}}
               callPoppup={(btnName) => {
                 if (btnName === 'Buy cheapest') {
                   const cheapest = findCheapestProduct();

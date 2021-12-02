@@ -2,7 +2,7 @@ import React from 'react';
 import classNames from 'classnames';
 import style from './Button.module.scss';
 
-function Button({ width, name, poppupActive, setPoppupActive, values }) {
+function Button({ width, name, poppupActive, setPoppupActive, values, toValidForm }) {
   const styleBtn = {
     maxWidth: `${width}px`,
   };
@@ -12,6 +12,7 @@ function Button({ width, name, poppupActive, setPoppupActive, values }) {
   };
 
   const setDataPoppup = () => {
+    toValidForm();
     setPoppupActive({ active: true, title: name });
   };
 
