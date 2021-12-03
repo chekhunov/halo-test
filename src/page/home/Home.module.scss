@@ -1,16 +1,47 @@
+@import '../../assets/scss/mixins';
+
 .wrapper {
   padding-top: 105px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @include _1024 {
+    padding-top: 70px;
+  }
+
+  @include _767 {
+    padding-top: 50px;
+  }
 }
 
 .cards {
-  max-height: 550px;
+  max-height: 580px;
   overflow: auto;
   display: flex;
   flex-wrap: wrap;
-  margin-right: -45px;
+  justify-content: center;
+  margin: auto;
+  margin-right: -40px;
   margin-bottom: 70px;
+
+  @include _1024 {
+    margin-right: -20px;
+    margin-bottom: 50px;
+  }
+
+  @include _767 {
+    margin-right: 0;
+  }
+
+  & {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
 }

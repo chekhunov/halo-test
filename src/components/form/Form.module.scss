@@ -1,18 +1,38 @@
+@import '../../assets/scss/mixins';
+
+.section {
+  @include _450 {
+    width: 100%;
+  }
+}
+
 .form {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @include _450 {
+    width: 100%;
+  }
 }
 
 .headline {
   margin-bottom: 8px;
   font-size: 16px;
   opacity: 0.5;
+
+  @include _450 {
+    font-size: 12px;
+  }
 }
 
 .title {
   margin-bottom: 16px;
   font-size: 40px;
+
+  @include _450 {
+    font-size: 28px;
+  }
 }
 
 .priceBox {
@@ -30,6 +50,10 @@
 
   span {
     font-size: 60px;
+
+    @include _450 {
+      font-size: 40px;
+    }
   }
 
   .units {
@@ -44,6 +68,10 @@
   margin-bottom: 40px;
   display: flex;
   flex-direction: column;
+
+  @include _450 {
+    width: 100%;
+  }
 }
 
 .input {
@@ -56,6 +84,11 @@
   padding: 16px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 16px;
+
+  @include _450 {
+    max-width: 100%;
+    min-width: 260px;
+  }
 }
 
 input {

@@ -6,7 +6,7 @@ function ClearInput({ toClear, type }) {
   return (
     <svg
       className={style.clearInput}
-      onClick={toClear(type)}
+      onClick={(event) => toClear(type, event)}
       width="24"
       height="24"
       viewBox="0 0 24 24"

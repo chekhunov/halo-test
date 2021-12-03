@@ -1,4 +1,6 @@
 @import '../../assets/scss/vars';
+@import '../../assets/scss/mixins';
+
 .btn {
   width: 100%;
   max-width: 235px;
@@ -13,6 +15,13 @@
   line-height: 0;
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
+
+  @include _767 {
+    max-width: 100%;
+  }
+  @include _450 {
+    max-width: 100% !important;
+  }
 
   span {
     position: relative;

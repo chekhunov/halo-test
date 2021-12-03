@@ -6,6 +6,7 @@ function BuyButton({ index, poppupActive, setPoppupActive }) {
   const clickBtn = () => {
     setPoppupActive({ active: true, title: 'Buy', id: index });
   };
+
   return (
     <div
       className={classNames(style.btn, 'uppercase', 'buy-btn', {

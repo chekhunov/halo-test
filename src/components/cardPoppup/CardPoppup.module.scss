@@ -1,3 +1,5 @@
+@import '../../assets/scss/mixins';
+
 .card {
   position: relative;
   width: 100%;
@@ -9,6 +11,12 @@
   align-items: center;
   background-color: #ffffff;
   border-radius: 24px;
+
+  @include _450 {
+    width: 100%;
+    padding: 20px;
+    border-radius: 0;
+  }
 }
 
 .icon {
@@ -16,6 +24,11 @@
   top: -10px;
   right: -10px;
   cursor: pointer;
+
+  @include _450 {
+    top: 10px;
+    right: 10px;
+  }
 
   circle {
     transition: fill 0.3s;

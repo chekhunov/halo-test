@@ -1,9 +1,8 @@
 # Halo
 
 - commands
-
-npm run server: start server localhost:9999
-npm run start: start react project
+  npm run server: start server localhost:9999 <br>
+  npm run start: need start react project localhost:3000
 
 route: https://run.mocky.io/v3/b7d36eea-0b3f-414a-ba44-711b5f5e528e
 my server route products: localhost:9999/products

@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import classNames from 'classnames';
 import Form from '../form';
 import style from './CardPoppup.module.scss';
 
-function CardPoppup({ index, name, category, price, poppupActive, setPoppupActive, closePoppup }) {
+function CardPoppup({ name, category, price, poppupActive, setPoppupActive, closePoppup }) {
   return (
     <div className={classNames(style.card, 'card')}>
       <svg

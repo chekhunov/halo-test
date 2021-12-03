@@ -1,24 +1,42 @@
+@import '../../assets/scss/mixins';
+
 .card {
-  width: 100%;
   width: calc(352px);
-  margin-right: 45px;
+  margin-right: 40px;
   margin-bottom: 40px;
   padding: 30px;
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
   border-radius: 24px;
+
+  @include _1024 {
+    margin-right: 20px;
+  }
+
+  @include _767 {
+    width: 100%;
+    margin-right: 0;
+  }
 }
 
 .headline {
   margin-bottom: 8px;
   font-size: 16px;
   opacity: 0.5;
+
+  @include _767 {
+    font-size: 12px;
+  }
 }
 
 .title {
   margin-bottom: 40px;
   font-size: 40px;
+
+  @include _767 {
+    font-size: 28px;
+  }
 }
 
 .priceBox {
@@ -35,6 +53,10 @@
 
   span {
     font-size: 60px;
+
+    @include _767 {
+      font-size: 40px;
+    }
   }
 
   .units {

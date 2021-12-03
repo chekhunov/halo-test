@@ -1,14 +1,12 @@
-import React from 'react'
+import React from 'react';
 
-import './Preloader.scss'
+import './Preloader.scss';
 export default function PreLoader() {
-    return (   
-      
-        <div className="lds-facebook">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>                
-       
-    )
+  return (
+    <div className="lds-facebook">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  );
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import classNames from 'classnames';
 import style from './Button.module.scss';
 
-function Button({ width, name, poppupActive, setPoppupActive, values, toValidForm }) {
+function Button({ width, name, setPoppupActive, values, toValidForm }) {
   const styleBtn = {
     maxWidth: `${width}px`,
   };
@@ -18,13 +18,11 @@ function Button({ width, name, poppupActive, setPoppupActive, values, toValidFor
 
   function isEmpty(obj) {
     for (let key in obj) {
-      console.log(key);
       return false;
     }
     return true;
   }
 
-  console.log(values);
   return (
     <button
       style={styleBtn}

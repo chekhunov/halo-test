@@ -17,14 +17,17 @@ function Home() {
 
   const [poppupActive, setPoppupActive] = useState({ active: false, title: '', id: null });
 
+  // Getting data from server
   useEffect(() => {
     dispatch(fetchCards());
-  }, []);
+  }, [dispatch]);
 
+  // the lowest price
   const findCheapestProduct = () => {
     return [cards.sort((a, b) => a.price - b.price)[0]];
   };
 
+  // Find a map on the index
   const findClickedCard = (id) => {
     return cards.filter((item, index) => index === id);
   };
@@ -33,7 +36,6 @@ function Home() {
     setPoppupActive({ active: false, title: '', id: null });
   };
 
-  console.log(isLoading);
   return (
     <div className={classNames(style.home, { active: poppupActive.active })}>
       <div className="container">
@@ -57,15 +59,6 @@ function Home() {
               poppupActive={poppupActive}
               setPoppupActive={setPoppupActive}
               toValidForm={() => {}}
-              callPoppup={(btnName) => {
-                if (btnName === 'Buy cheapest') {
-                  const cheapest = findCheapestProduct();
-                  const popupData = {
-                    cheapest,
-                  };
-                  // dispatch(showPoppup(popupData));
-                }
-              }}
             />
           </div>
         )}
